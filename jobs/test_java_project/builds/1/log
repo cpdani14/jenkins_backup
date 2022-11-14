@@ -1,0 +1,22 @@
+Started by user [8mha:////4IKKOJDqW6FcLJFPOeD7+9pZm6tm7uZS4i5oj8XYciupAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL95IKUxLxMAOlKBG3BAAAA[0mChidanand D
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test-java-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/cpdani14/test2_java.git
+ > git init /var/lib/jenkins/workspace/test-java-project # timeout=10
+Fetching upstream changes from https://github.com/cpdani14/test2_java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/cpdani14/test2_java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/cpdani14/test2_java.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision d6b55d010c5814c69bc6a0cd9d7ceec22029e8c0 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d6b55d010c5814c69bc6a0cd9d7ceec22029e8c0 # timeout=10
+Commit message: "adding java files by ws2"
+First time build. Skipping changelog.
+Finished: SUCCESS

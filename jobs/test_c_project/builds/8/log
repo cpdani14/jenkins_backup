@@ -1,0 +1,22 @@
+Started by user [8mha:////4IKKOJDqW6FcLJFPOeD7+9pZm6tm7uZS4i5oj8XYciupAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL95IKUxLxMAOlKBG3BAAAA[0mChidanand D
+Running as SYSTEM
+Building remotely on [8mha:////4KN8v/17zC+40gr4R9hQnGmTrw/9aWpY24APGUF5347GAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQifed4P6BLAfiwII7FAAAA[0mC_Node in workspace /opt/jenkins/workspace/test_c_project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/cpdani14/test1.git
+ > git init /opt/jenkins/workspace/test_c_project # timeout=10
+Fetching upstream changes from https://github.com/cpdani14/test1.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.1'
+ > git fetch --tags --force --progress -- https://github.com/cpdani14/test1.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/cpdani14/test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8cd93e41c1c8e02896e9f9dba5957ace4d624d19 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8cd93e41c1c8e02896e9f9dba5957ace4d624d19 # timeout=10
+Commit message: "adding makefile"
+ > git rev-list --no-walk 8cd93e41c1c8e02896e9f9dba5957ace4d624d19 # timeout=10
+Finished: SUCCESS

@@ -1,0 +1,7 @@
+Started by user [8mha:////4IKKOJDqW6FcLJFPOeD7+9pZm6tm7uZS4i5oj8XYciupAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL95IKUxLxMAOlKBG3BAAAA[0mChidanand D
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+[job1] $ /bin/sh -xe /tmp/jenkins11104271839565197659.sh
++ /home/ubuntu/big2.sh 9 7
+9 is big
+Finished: SUCCESS

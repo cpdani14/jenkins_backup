@@ -1,0 +1,123 @@
+SSHLauncher{host='43.205.207.71', port=22, credentialsId='ee9ede90-89a8-44c4-a640-4927a8ef694a', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.ManuallyProvidedKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[11/13/22 06:18:27] [SSH] Opening SSH connection to 43.205.207.71:22.
+[11/13/22 06:18:27] [SSH] SSH host key matched the key required for this connection. Connection will be allowed.
+[11/13/22 06:18:27] [SSH] Authentication successful.
+[11/13/22 06:18:27] [SSH] The remote user's environment is:
+BASH=/usr/bin/bash
+BASHOPTS=cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASHRCSOURCED=Y
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/ec2-user
+HOSTNAME=ip-172-31-40-171.ap-south-1.compute.internal
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LESSOPEN='||/usr/bin/lesspipe.sh %s'
+LOGNAME=ec2-user
+MACHTYPE=x86_64-redhat-linux-gnu
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+PIPESTATUS=([0]="0")
+PPID=45963
+PS4='+ '
+PWD=/home/ec2-user
+SELINUX_LEVEL_REQUESTED=
+SELINUX_ROLE_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='13.233.194.132 54074 22'
+SSH_CONNECTION='13.233.194.132 54074 172.31.40.171 22'
+TERM=dumb
+UID=1000
+USER=ec2-user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_ID=176
+_=myname
+myname=chidanand
+which_declare='declare -f'
+which_opt=-f
+gawklibpath_append () 
+{ 
+    [ -z "$AWKLIBPATH" ] && AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`;
+    export AWKLIBPATH="$AWKLIBPATH:$*"
+}
+gawklibpath_default () 
+{ 
+    unset AWKLIBPATH;
+    export AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`
+}
+gawklibpath_prepend () 
+{ 
+    [ -z "$AWKLIBPATH" ] && AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`;
+    export AWKLIBPATH="$*:$AWKLIBPATH"
+}
+gawkpath_append () 
+{ 
+    [ -z "$AWKPATH" ] && AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`;
+    export AWKPATH="$AWKPATH:$*"
+}
+gawkpath_default () 
+{ 
+    unset AWKPATH;
+    export AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`
+}
+gawkpath_prepend () 
+{ 
+    [ -z "$AWKPATH" ] && AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`;
+    export AWKPATH="$*:$AWKPATH"
+}
+which () 
+{ 
+    ( alias;
+    eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+Checking Java version in the PATH
+openjdk version "1.8.0_352"
+OpenJDK Runtime Environment (build 1.8.0_352-b08)
+OpenJDK 64-Bit Server VM (build 25.352-b08, mixed mode)
+[11/13/22 06:18:27] [SSH] Checking java version of /opt/jenkins/jdk/bin/java
+Couldn't figure out the Java version of /opt/jenkins/jdk/bin/java
+bash: /opt/jenkins/jdk/bin/java: No such file or directory
+
+[11/13/22 06:18:27] [SSH] Checking java version of java
+[11/13/22 06:18:27] [SSH] java -version returned 1.8.0_352.
+[11/13/22 06:18:27] [SSH] Starting sftp client.
+[11/13/22 06:18:27] [SSH] Copying latest remoting.jar...
+[11/13/22 06:18:27] [SSH] Copied 1,339,992 bytes.
+Expanded the channel window size to 4MB
+[11/13/22 06:18:27] [SSH] Starting agent process: cd "/opt/jenkins" && java  -jar remoting.jar -workDir /opt/jenkins -jar-cache /opt/jenkins/remoting/jarCache
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: hudson/remoting/Launcher has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:601)
+Agent JVM has terminated. Exit code=1
+[11/13/22 06:18:27] Launch failed - cleaning up connection
+[11/13/22 06:18:27] [SSH] Connection closed.
